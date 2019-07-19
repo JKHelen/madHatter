@@ -1,0 +1,80 @@
+/*way 1: use  flex 布局*/
+.container {
+    display: flex;
+    text-align: center;
+}
+
+.left {
+    width: 100px;
+    background-color: yellowgreen;
+}
+
+.middle {
+    width: 100%;
+    background-color: lightsalmon;
+}
+
+.right {
+    width: 100px;
+    background-color: olive;
+}
+
+ /*way 2:use float layout*/
+.container-way2 {
+    text-align: center;
+    height: 200px;
+}
+
+.left-way2, .right-way2 {
+    width: 100px;
+    height: 100%;
+}
+.left-way2 {
+    background-color: yellowgreen;
+    float: left;
+}
+
+.middle-way2 {
+    height: 100%;
+    background-color: lightsalmon;
+}
+
+.right-way2 {
+    background-color: olive;
+    float: right;
+}
+
+
+/*way 3:use absolute layout*/
+.container-way3 {
+    text-align: center;
+    height: 100px;
+    overflow: scroll;
+}
+
+.left-way3, .right-way3 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 470px;
+}
+.left-way3 {
+    background-color: yellowgreen;
+    left: 0;
+
+}
+.middle-way3 {
+    height: inherit;
+    background-color: lightsalmon;
+    margin: auto 100px;
+    position: relative;
+}
+
+.right-way3 {
+    background-color: olive;
+    position: absolute;
+    right: 0;
+}
+
+
+

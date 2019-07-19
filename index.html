@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sum up</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- == 1. div 布局 ： 给定 3 个 div  左右固定 100px width 中间自适应==-->
+<p>== way 1: use  flex 布局</p>
+<div class="container">
+    <div class="left">left</div>
+    <div class="middle">middle
+        <h1>So what's flex layout?</h1>
+        <p>
+
+        </p>
+    </div>
+    <div class="right">right</div>
+</div>
+
+
+<p>== way 2: use  float  布局</p>
+<div class="container-way2">
+    <div class="left-way2">left-way2</div>
+    <div class="right-way2">right-way2</div>
+    <div class="middle-way2">middle-way2
+        <h1>So what's float layout?</h1>
+    </div>
+</div>
+
+
+<p>== way 3: use  absolute  布局</p>
+<div class="container-way3">
+    <div class="left-way3">left-way3</div>
+    <div class="middle-way3">middle-way3
+        <h2>So what's absolute layout?</h2>
+        <p>绝对定位：
+        通过左右两 div 使用绝对定位， 使其 左右分别为 0<br>
+        中间部分<br>
+        则根据相对定位实现居中自适应
+        </p>
+    </div>
+    <div class="right-way3">right-way3</div>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
