@@ -1,7 +1,27 @@
 //1. need 3 variables to store ship location
-var location1,
-    location2,
-    location3;
+// var location1,
+//     location2,
+//     location3;
+/*
+ * update location to be random
+ * but only 7 numbers
+ * 0~4 can be start location while 5, 6 is wrong
+ * random number should be between 0 and 4
+ */
+
+/*
+ * use random
+ * a. Math.random() is point number such as 0.1129, 0.8, 0.99 (0~1) Not include 1
+ * so to be 0~4 then can * 5
+ * e.g 0.1 * 5 0.3*5=1.5 0.9*5=4.5
+ * but only int number without point
+ * NOw Use Math.floor() to move point
+ */
+var random_location = Math.floor( Math.random() * 5 );
+
+var location1 = random_location;
+var location2 = location1 + 1;
+var location3 = location2 + 1;
 //2. geuss is player's guss number
 var geuss;
 
@@ -19,9 +39,10 @@ var is_sank = false;
   simple one set location 1, 2, 3 is 3,4,5
   after theses will be random number
  */
-location1 = 3;
-location2 = 4;
-location3 = 5;
+// location1 = 3;
+// location2 = 4;
+// location3 = 5;
+
 /*
  * step 1: loop get and check player's input
  */
