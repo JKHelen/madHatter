@@ -38,7 +38,7 @@ while( is_sank == false ) { // ship is not sank
     } else {
         //guess time add 1
         guesses++;
-        if ( guess == location1 || geuss == location2 || guess == location3 ) {
+        if ( guess == location1 || guess == location2 || guess == location3 ) {
             //hit time add 1
             alert("HIT!!!");
             hits++;
