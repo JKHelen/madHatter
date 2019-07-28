@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Test DOM</title>
+    <style>
+        #like {
+            color: red;
+        }
+    </style>
+    <script>
+        function init() {
+            var change = document.getElementById("like");
+            change.innerHTML = "Ye not like like ";
+            change.setAttribute("class", "like-text");
+            var alt_text = document.getElementById("little-king").getAttribute("alt");
+            console.log("The img goes like :" + alt_text);
+        }
+        window.onload = init;  //do not add () cause  just make function as a value here
+    </script>
 </head>
 <body>
 
 <p id="like">I like it</p>
 <p id="dislike">I dislike it</p>
+<img id="little-king" src="img/little-king.jpg" width="25%" height="25%" alt="little king picture" >
 
-<script src="testDom.js"></script>
+<!--<script src="testDom.js"></script>-->
+<!--<script>-->
+<!--    var change = document.getElementById("like");-->
+<!--    change.innerHTML = "Ye not like like ";-->
+<!--</script>-->
 </body>
 </html>
