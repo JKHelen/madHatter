@@ -63,7 +63,8 @@ while( is_sank == false ) { // ship is not sank
             //hit time add 1
             alert("HIT!!!");
             hits++;
-            if (hits == 3) {
+            if ( hits == 3 ) { //There is a bug: if guess always be the same one also sank..................
+                               // !!!!!!!!!!!After learn more back to fix this bug !!!!!!!!!!!!!!!!!!!!!
                 is_sank = true;
                 alert("You sank my battleship!!!");
             }
